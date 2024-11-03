@@ -1,0 +1,28 @@
+{
+    "name": "@grocery-app/web",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "eslint src --ext ts,tsx",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@grocery-app/shared": "0.0.1",
+        "@tanstack/react-query": "^5.x",
+        "fp-ts": "^2.x",
+        "io-ts": "^2.x",
+        "react": "^18.x",
+        "react-dom": "^18.x",
+        "react-router-dom": "^6.x",
+        "tailwindcss": "^3.x"
+    },
+    "devDependencies": {
+        "@types/react": "^18.x",
+        "@types/react-dom": "^18.x",
+        "@vitejs/plugin-react": "^4.x",
+        "autoprefixer": "^10.x",
+        "postcss": "^8.x",
+        "vite": "^5.x"
+    }
+}
