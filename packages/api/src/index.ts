@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import { initializeDatabase } from './db';
+import listsRouter from './routes/lists';
+import itemsRouter from './routes/items';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -18,6 +20,10 @@ initializeDatabase()
         console.error('Failed to initialize database:', err);
         process.exit(1);
     });
+
+// Routes
+app.use('/api/lists', listsRouter);
+app.use('/api/items', itemsRouter);
 
 // Basic health check endpoint
 app.get('/health', (_req, res) => {
