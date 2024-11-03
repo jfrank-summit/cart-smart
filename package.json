@@ -6,6 +6,9 @@
     ],
     "scripts": {
         "dev": "concurrently \"yarn workspace @grocery-app/api dev\" \"yarn workspace @grocery-app/web dev\" \"yarn workspace @grocery-app/shared dev\"",
+        "dev:api": "yarn dev build:shared && yarn workspace @grocery-app/api dev",
+        "dev:web": "yarn workspace @grocery-app/web dev",
+        "build:shared": "yarn workspace @grocery-app/shared build",
         "build": "yarn workspace @grocery-app/shared build && yarn workspace @grocery-app/api build && yarn workspace @grocery-app/web build",
         "lint": "eslint \"packages/**/*.{ts,tsx}\"",
         "format": "prettier --write \"**/*.{ts,tsx,md}\""
