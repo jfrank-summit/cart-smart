@@ -1,10 +1,12 @@
 export type Item = {
-    id: number;
+    id: string;
     name: string;
-    category: string;
-    is_checked: boolean;
-    created_at: string;
-    updated_at: string;
+    categoryId: string;
+    subcategory?: string;
+    variants?: string[];
+    isChecked?: boolean;
+    createdAt?: string;
+    updatedAt?: string;
 };
 
 export type List = {
@@ -16,8 +18,9 @@ export type List = {
 };
 
 export type Category = {
-    id: number;
+    id: string;
     name: string;
+    items?: Item[];
 };
 
 // API Response types
@@ -32,4 +35,4 @@ export type ApiResponse<T> = {
 // Function types for API calls using fp-ts
 export type GetLists = () => Promise<ApiResponse<List[]>>;
 export type CreateList = (name: string) => Promise<ApiResponse<List>>;
-export type AddItem = (listId: number, item: Omit<Item, 'id' | 'created_at' | 'updated_at'>) => Promise<ApiResponse<Item>>; 
+export type AddItem = (listId: number, item: Omit<Item, 'id' | 'createdAt' | 'updatedAt'>) => Promise<ApiResponse<Item>>; 

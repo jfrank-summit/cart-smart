@@ -53,23 +53,38 @@ export async function initializeDatabase() {
 
         -- Categories table
         CREATE TABLE IF NOT EXISTS categories (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL UNIQUE,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            id TEXT PRIMARY KEY,
+            name TEXT NOT NULL
         );
 
         -- Items table with category relationship
         CREATE TABLE IF NOT EXISTS items (
+            id TEXT PRIMARY KEY,
+            name TEXT NOT NULL,
+            category_id TEXT NOT NULL,
+            subcategory TEXT,
+            FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
+        );
+
+        -- Item variants table
+        CREATE TABLE IF NOT EXISTS item_variants (
+            item_id TEXT NOT NULL,
+            variant TEXT NOT NULL,
+            PRIMARY KEY (item_id, variant),
+            FOREIGN KEY (item_id) REFERENCES items(id) ON DELETE CASCADE
+        );
+
+        -- List items table (keep existing structure)
+        CREATE TABLE IF NOT EXISTS list_items (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             list_id INTEGER NOT NULL,
-            name TEXT NOT NULL,
-            category_id INTEGER,
+            item_id TEXT NOT NULL,
             is_checked INTEGER DEFAULT 0,
             created_by INTEGER NOT NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (list_id) REFERENCES lists(id) ON DELETE CASCADE,
-            FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL,
+            FOREIGN KEY (item_id) REFERENCES items(id) ON DELETE CASCADE,
             FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE CASCADE
         );
 

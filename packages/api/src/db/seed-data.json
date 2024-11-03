@@ -1,0 +1,535 @@
+{
+    "categories": [
+        {
+            "id": "produce",
+            "name": "Produce",
+            "items": [
+                {
+                    "id": "p001",
+                    "name": "Apple",
+                    "subcategory": "Fruits",
+                    "common_variants": [
+                        "Gala",
+                        "Fuji",
+                        "Honeycrisp",
+                        "Granny Smith"
+                    ]
+                },
+                {
+                    "id": "p002",
+                    "name": "Banana",
+                    "subcategory": "Fruits"
+                },
+                {
+                    "id": "p003",
+                    "name": "Orange",
+                    "subcategory": "Fruits",
+                    "common_variants": [
+                        "Navel",
+                        "Mandarin",
+                        "Valencia"
+                    ]
+                },
+                {
+                    "id": "p004",
+                    "name": "Lemon",
+                    "subcategory": "Fruits"
+                },
+                {
+                    "id": "p005",
+                    "name": "Lime",
+                    "subcategory": "Fruits"
+                },
+                {
+                    "id": "p006",
+                    "name": "Strawberries",
+                    "subcategory": "Berries"
+                },
+                {
+                    "id": "p007",
+                    "name": "Blueberries",
+                    "subcategory": "Berries"
+                },
+                {
+                    "id": "p008",
+                    "name": "Raspberries",
+                    "subcategory": "Berries"
+                },
+                {
+                    "id": "p009",
+                    "name": "Blackberries",
+                    "subcategory": "Berries"
+                },
+                {
+                    "id": "p010",
+                    "name": "Grapes",
+                    "subcategory": "Fruits",
+                    "common_variants": [
+                        "Red",
+                        "Green",
+                        "Black"
+                    ]
+                },
+                {
+                    "id": "p011",
+                    "name": "Tomatoes",
+                    "subcategory": "Vegetables",
+                    "common_variants": [
+                        "Roma",
+                        "Cherry",
+                        "Beefsteak",
+                        "On the Vine"
+                    ]
+                },
+                {
+                    "id": "p012",
+                    "name": "Lettuce",
+                    "subcategory": "Vegetables",
+                    "common_variants": [
+                        "Iceberg",
+                        "Romaine",
+                        "Butter",
+                        "Green Leaf"
+                    ]
+                },
+                {
+                    "id": "p013",
+                    "name": "Spinach",
+                    "subcategory": "Vegetables"
+                },
+                {
+                    "id": "p014",
+                    "name": "Carrots",
+                    "subcategory": "Vegetables"
+                },
+                {
+                    "id": "p015",
+                    "name": "Celery",
+                    "subcategory": "Vegetables"
+                }
+            ]
+        },
+        {
+            "id": "dairy",
+            "name": "Dairy & Eggs",
+            "items": [
+                {
+                    "id": "d001",
+                    "name": "Milk",
+                    "common_variants": [
+                        "Whole",
+                        "2%",
+                        "1%",
+                        "Skim"
+                    ]
+                },
+                {
+                    "id": "d002",
+                    "name": "Eggs",
+                    "common_variants": [
+                        "Large",
+                        "Extra Large",
+                        "Jumbo",
+                        "Organic"
+                    ]
+                },
+                {
+                    "id": "d003",
+                    "name": "Cheese",
+                    "common_variants": [
+                        "Cheddar",
+                        "Mozzarella",
+                        "Swiss",
+                        "Parmesan"
+                    ]
+                },
+                {
+                    "id": "d004",
+                    "name": "Yogurt",
+                    "common_variants": [
+                        "Greek",
+                        "Regular",
+                        "Low-fat",
+                        "Non-fat"
+                    ]
+                },
+                {
+                    "id": "d005",
+                    "name": "Butter",
+                    "common_variants": [
+                        "Salted",
+                        "Unsalted"
+                    ]
+                },
+                {
+                    "id": "d006",
+                    "name": "Cream",
+                    "common_variants": [
+                        "Heavy",
+                        "Light",
+                        "Half & Half"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "meat",
+            "name": "Meat & Seafood",
+            "items": [
+                {
+                    "id": "m001",
+                    "name": "Chicken Breast",
+                    "subcategory": "Poultry"
+                },
+                {
+                    "id": "m002",
+                    "name": "Ground Beef",
+                    "subcategory": "Beef",
+                    "common_variants": [
+                        "80/20",
+                        "90/10",
+                        "93/7"
+                    ]
+                },
+                {
+                    "id": "m003",
+                    "name": "Salmon",
+                    "subcategory": "Seafood",
+                    "common_variants": [
+                        "Atlantic",
+                        "Sockeye",
+                        "Coho"
+                    ]
+                },
+                {
+                    "id": "m004",
+                    "name": "Pork Chops",
+                    "subcategory": "Pork"
+                },
+                {
+                    "id": "m005",
+                    "name": "Bacon",
+                    "subcategory": "Pork"
+                },
+                {
+                    "id": "m006",
+                    "name": "Turkey",
+                    "subcategory": "Poultry"
+                }
+            ]
+        },
+        {
+            "id": "pantry",
+            "name": "Pantry Staples",
+            "items": [
+                {
+                    "id": "s001",
+                    "name": "Rice",
+                    "common_variants": [
+                        "White",
+                        "Brown",
+                        "Jasmine",
+                        "Basmati"
+                    ]
+                },
+                {
+                    "id": "s002",
+                    "name": "Pasta",
+                    "common_variants": [
+                        "Spaghetti",
+                        "Penne",
+                        "Fettuccine",
+                        "Rotini"
+                    ]
+                },
+                {
+                    "id": "s003",
+                    "name": "Bread",
+                    "common_variants": [
+                        "White",
+                        "Wheat",
+                        "Sourdough",
+                        "Rye"
+                    ]
+                },
+                {
+                    "id": "s004",
+                    "name": "Flour",
+                    "common_variants": [
+                        "All-Purpose",
+                        "Whole Wheat",
+                        "Bread",
+                        "Pastry"
+                    ]
+                },
+                {
+                    "id": "s005",
+                    "name": "Sugar",
+                    "common_variants": [
+                        "Granulated",
+                        "Brown",
+                        "Powdered"
+                    ]
+                },
+                {
+                    "id": "s006",
+                    "name": "Salt",
+                    "common_variants": [
+                        "Table",
+                        "Kosher",
+                        "Sea"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "canned",
+            "name": "Canned & Jarred Goods",
+            "items": [
+                {
+                    "id": "c001",
+                    "name": "Tomato Sauce"
+                },
+                {
+                    "id": "c002",
+                    "name": "Diced Tomatoes"
+                },
+                {
+                    "id": "c003",
+                    "name": "Beans",
+                    "common_variants": [
+                        "Black",
+                        "Pinto",
+                        "Kidney",
+                        "Garbanzo"
+                    ]
+                },
+                {
+                    "id": "c004",
+                    "name": "Tuna",
+                    "common_variants": [
+                        "Chunk Light",
+                        "Solid White",
+                        "In Water",
+                        "In Oil"
+                    ]
+                },
+                {
+                    "id": "c005",
+                    "name": "Soup",
+                    "common_variants": [
+                        "Chicken Noodle",
+                        "Tomato",
+                        "Vegetable"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "frozen",
+            "name": "Frozen Foods",
+            "items": [
+                {
+                    "id": "f001",
+                    "name": "Ice Cream",
+                    "common_variants": [
+                        "Vanilla",
+                        "Chocolate",
+                        "Strawberry"
+                    ]
+                },
+                {
+                    "id": "f002",
+                    "name": "Frozen Vegetables",
+                    "common_variants": [
+                        "Mixed",
+                        "Peas",
+                        "Corn",
+                        "Broccoli"
+                    ]
+                },
+                {
+                    "id": "f003",
+                    "name": "Frozen Pizza"
+                },
+                {
+                    "id": "f004",
+                    "name": "Frozen Dinners"
+                }
+            ]
+        },
+        {
+            "id": "beverages",
+            "name": "Beverages",
+            "items": [
+                {
+                    "id": "b001",
+                    "name": "Coffee",
+                    "common_variants": [
+                        "Ground",
+                        "Whole Bean",
+                        "Instant"
+                    ]
+                },
+                {
+                    "id": "b002",
+                    "name": "Tea",
+                    "common_variants": [
+                        "Black",
+                        "Green",
+                        "Herbal"
+                    ]
+                },
+                {
+                    "id": "b003",
+                    "name": "Soda",
+                    "common_variants": [
+                        "Cola",
+                        "Lemon-Lime",
+                        "Root Beer"
+                    ]
+                },
+                {
+                    "id": "b004",
+                    "name": "Juice",
+                    "common_variants": [
+                        "Orange",
+                        "Apple",
+                        "Cranberry"
+                    ]
+                },
+                {
+                    "id": "b005",
+                    "name": "Water",
+                    "common_variants": [
+                        "Spring",
+                        "Purified",
+                        "Sparkling"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "snacks",
+            "name": "Snacks & Sweets",
+            "items": [
+                {
+                    "id": "n001",
+                    "name": "Chips",
+                    "common_variants": [
+                        "Regular",
+                        "BBQ",
+                        "Sour Cream & Onion"
+                    ]
+                },
+                {
+                    "id": "n002",
+                    "name": "Cookies",
+                    "common_variants": [
+                        "Chocolate Chip",
+                        "Oatmeal",
+                        "Sugar"
+                    ]
+                },
+                {
+                    "id": "n003",
+                    "name": "Crackers",
+                    "common_variants": [
+                        "Regular",
+                        "Whole Wheat",
+                        "Cheese"
+                    ]
+                },
+                {
+                    "id": "n004",
+                    "name": "Nuts",
+                    "common_variants": [
+                        "Almonds",
+                        "Peanuts",
+                        "Cashews"
+                    ]
+                },
+                {
+                    "id": "n005",
+                    "name": "Chocolate",
+                    "common_variants": [
+                        "Dark",
+                        "Milk",
+                        "White"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "condiments",
+            "name": "Condiments & Sauces",
+            "items": [
+                {
+                    "id": "cs001",
+                    "name": "Ketchup"
+                },
+                {
+                    "id": "cs002",
+                    "name": "Mustard",
+                    "common_variants": [
+                        "Yellow",
+                        "Dijon",
+                        "Spicy Brown"
+                    ]
+                },
+                {
+                    "id": "cs003",
+                    "name": "Mayonnaise"
+                },
+                {
+                    "id": "cs004",
+                    "name": "Hot Sauce",
+                    "common_variants": [
+                        "Tabasco",
+                        "Sriracha",
+                        "Frank's"
+                    ]
+                },
+                {
+                    "id": "cs005",
+                    "name": "Soy Sauce"
+                },
+                {
+                    "id": "cs006",
+                    "name": "Olive Oil",
+                    "common_variants": [
+                        "Extra Virgin",
+                        "Light",
+                        "Regular"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "household",
+            "name": "Household Items",
+            "items": [
+                {
+                    "id": "h001",
+                    "name": "Paper Towels"
+                },
+                {
+                    "id": "h002",
+                    "name": "Toilet Paper"
+                },
+                {
+                    "id": "h003",
+                    "name": "Trash Bags"
+                },
+                {
+                    "id": "h004",
+                    "name": "Dish Soap"
+                },
+                {
+                    "id": "h005",
+                    "name": "Laundry Detergent"
+                }
+            ]
+        }
+    ]
+}

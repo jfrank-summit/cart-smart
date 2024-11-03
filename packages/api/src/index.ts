@@ -1,8 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import { initializeDatabase } from './db';
-import listsRouter from './routes/lists';
-import itemsRouter from './routes/items';
+import { initializeDatabase } from './db/index.js';
+import { seedDatabase } from './db/seed.js';
+import listsRouter from './routes/lists.js';
+import itemsRouter from './routes/items.js';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,10 +12,13 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Initialize database
-initializeDatabase()
+// Initialize database and seed data
+Promise.all([
+    initializeDatabase(),
+    seedDatabase()
+])
     .then(() => {
-        console.log('Database initialized');
+        console.log('Database initialized and seeded');
     })
     .catch((err) => {
         console.error('Failed to initialize database:', err);
