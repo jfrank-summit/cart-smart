@@ -3,6 +3,7 @@ import cors from 'cors';
 import { initializeDatabase } from './db';
 import listsRouter from './routes/lists';
 import itemsRouter from './routes/items';
+import sharedItemsRouter from './routes/shared-items';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -24,6 +25,7 @@ initializeDatabase()
 // Routes
 app.use('/api/lists', listsRouter);
 app.use('/api/items', itemsRouter);
+app.use('/api/shared', sharedItemsRouter);
 
 // Basic health check endpoint
 app.get('/health', (_req, res) => {
