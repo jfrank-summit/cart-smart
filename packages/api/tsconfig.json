@@ -4,10 +4,12 @@
         "outDir": "./dist",
         "rootDir": "./src",
         "composite": true,
-        "declaration": true
+        "declaration": true,
+        "resolveJsonModule": true
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "src/db/*.json"
     ],
     "exclude": [
         "node_modules",
